@@ -1,0 +1,19 @@
+{
+  "name": "cinemind-ai",
+  "private": true,
+  "scripts": {
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "dependencies": {
+    "cloudinary": "^1.41.3",
+    "dotenv": "^17.4.2",
+    "mongoose": "^9.7.4",
+    "multer": "^2.2.0",
+    "multer-storage-cloudinary": "^4.0.0"
+  }
+}
